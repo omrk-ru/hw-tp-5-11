@@ -15,7 +15,7 @@ def poluchit_valutu():
 
 rates = poluchit_valutu()
 currencies = list(rates.keys())
-st.title('Конвектор валют')
+st.title('Конвертер валют')
 st.write('Курсы валют с сайта ЦБ РФ')
 amount = st.number_input("Введине сумму:", min_value = 0.0, step = 1.0)
 from_currencies = st.selectbox("Из валюты:", currencies)
